@@ -1,0 +1,98 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "jpd_sharedcommondataserviceforapps_0adb5"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "Quanto_um_data_de_alocação_for_inserida": {
+          "metadata": {
+            "operationMetadataId": "fd8a0409-337f-4dd9-beb6-f15f37c77f82"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "jpd_alocacaodeativo",
+              "subscriptionRequest/scope": 2,
+              "subscriptionRequest/filteringattributes": "jpd_datadealocacao"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Obter_Ativo": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "e16bb61a-285c-4e17-8e66-b6c9924b2334"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "jpd_ativos",
+              "recordId": "@triggerOutputs()?['body/_jpd_iddoativo_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Atualizar_Ativo_para_Alocado": {
+          "runAfter": {
+            "Obter_Ativo": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "2e8530ff-15e6-406d-8722-72160a4675cc"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "jpd_ativos",
+              "recordId": "@outputs('Obter_Ativo')?['body/jpd_ativoid']",
+              "item/jpd_statusdaalocacao": 836620001
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}
