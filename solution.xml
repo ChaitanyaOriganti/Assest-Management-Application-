@@ -1,0 +1,158 @@
+<ImportExportXml version="9.2.23101.182" SolutionPackageVersion="9.2" languagecode="1046" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>AssetManagement</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Asset Management" languagecode="1046" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Atualização do Asset Management" languagecode="1046" />
+    </Descriptions>
+    <Version>1.1.0.11</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>jpd</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="jpd" languagecode="1046" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>jpd</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>83662</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="2" />
+      <RootComponent type="1" schemaName="jpd_alocacaodeativo" behavior="0" />
+      <RootComponent type="1" schemaName="jpd_ativo" behavior="0" />
+      <RootComponent type="1" schemaName="jpd_oprocessodealocaodeativo" behavior="0" />
+      <RootComponent type="1" schemaName="jpd_verificacaodeativos" behavior="0" />
+      <RootComponent type="9" schemaName="jpd_satisfacaodaalocacao" behavior="0" />
+      <RootComponent type="9" schemaName="jpd_statusalocacao" behavior="0" />
+      <RootComponent type="9" schemaName="jpd_statusdaaprovacao" behavior="0" />
+      <RootComponent type="9" schemaName="jpd_tiposativos" behavior="0" />
+      <RootComponent type="9" schemaName="jpd_tiposdeativos" behavior="0" />
+      <RootComponent type="20" id="{87daca5c-1e5d-ee11-8df0-6045bd3b2479}" behavior="0" />
+      <RootComponent type="29" id="{0b4d25b8-025a-ee11-8df0-6045bd3b2479}" behavior="0" />
+      <RootComponent type="29" id="{236714f2-fc59-ee11-8df0-6045bd3b2479}" behavior="0" />
+      <RootComponent type="29" id="{83a069a4-286f-ee11-8179-6045bd3b2479}" behavior="0" />
+      <RootComponent type="29" id="{e92b6ef5-6658-ee11-be6e-6045bd3b2479}" behavior="0" />
+      <RootComponent type="60" id="{5ccee15b-555c-ee11-8df0-6045bd3b2479}" behavior="0" />
+      <RootComponent type="60" id="{cc98fcd7-1a5d-ee11-8df0-6045bd3b2479}" behavior="0" />
+      <RootComponent type="61" schemaName="adx_icon_tag_small" behavior="0" />
+      <RootComponent type="61" schemaName="jpd_check_icon" behavior="0" />
+      <RootComponent type="61" schemaName="msdyn_/Icons/AnalysisResult.svg" behavior="0" />
+      <RootComponent type="62" schemaName="jpd_AppGestaodeAtivos" behavior="0" />
+      <RootComponent type="62" schemaName="jpd_Ativos" behavior="0" />
+      <RootComponent type="80" schemaName="jpd_AppGestaodeAtivos" behavior="0" />
+      <RootComponent type="431" schemaName="contact jpd_profilepicture" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="61" schemaName="adx_create_portal_content.svg" displayName="adx_create_portal_content.svg" solution="MicrosoftPortalWebForms (9.3.2209.2)">
+          <package>CDSBasePortal (9.3.2304.83)</package>
+        </Required>
+        <Dependent type="62" schemaName="jpd_AppGestaodeAtivos" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="adx_icon_pagetag_small" displayName="adx_icon_pagetag_small" solution="MicrosoftPortalBase (9.3.2301.1)">
+          <package>CDSBasePortal (9.3.2304.83)</package>
+        </Required>
+        <Dependent type="80" schemaName="jpd_AppGestaodeAtivos" displayName="App Gestão de Ativos" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="adx_icon_tag_small" displayName="adx_icon_tag_small" solution="MicrosoftPortalBase (9.3.2301.1)">
+          <package>CDSBasePortal (9.3.2304.83)</package>
+        </Required>
+        <Dependent type="61" schemaName="adx_icon_tag_small" displayName="adx_icon_tag_small" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="cr608_MyJavaScript" displayName="cr608_MyJavaScript" solution="Active" />
+        <Dependent type="60" displayName="Contato main form" parentDisplayName="Contato" id="{fed4d44e-4557-ee11-be6e-6045bd3b2479}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/AnalysisResult.svg" displayName="msdyn_/Icons/AnalysisResult.svg" solution="msdyn_PowerAppsChecker (2.0.0.8)">
+          <package>msdyn_PowerAppsCheckerAnchor (2.0.0.8)</package>
+        </Required>
+        <Dependent type="1" schemaName="jpd_alocacaodeativo" displayName="Alocação de Ativo" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/AnalysisResult.svg" displayName="msdyn_/Icons/AnalysisResult.svg" solution="msdyn_PowerAppsChecker (2.0.0.8)">
+          <package>msdyn_PowerAppsCheckerAnchor (2.0.0.8)</package>
+        </Required>
+        <Dependent type="61" schemaName="msdyn_/Icons/AnalysisResult.svg" displayName="msdyn_/Icons/AnalysisResult.svg" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="mspcat_/box_24_regular.svg" displayName="mspcat_/box_24_regular.svg" solution="mspcat_CatalogPackaging (1.2.0.2)">
+          <package>mspcat_CatalogPackaging (1.2.0.2)</package>
+        </Required>
+        <Dependent type="62" schemaName="jpd_AppGestaodeAtivos" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2310.1019)" />
+        <Dependent type="60" displayName="Alocação de Ativo Main Form" parentDisplayName="Alocação de Ativo" id="{540e089c-6258-ee11-be6e-6045bd3b2479}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Rating.StarRatingControl" displayName="MscrmControls.Rating.StarRatingControl" solution="CustomControlsCore (9.2.23101.00182)" />
+        <Dependent type="60" displayName="Verificação de Ativos main form" parentDisplayName="Verificação de Ativos" id="{ca4ba938-1458-ee11-be6e-6045bd3b2479}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
